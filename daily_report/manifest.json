@@ -1,0 +1,31 @@
+{
+  "name":"Daily report",
+  "version":"1.0",
+  "manifest_version":2,
+
+  "description":"勉強会用のchrome拡張機能です",
+
+  "permissions": [
+      "history"
+    ],
+
+  "browser_action": {
+    "default_icon": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png"
+    },
+    "default_title": "日報生成",
+    "default_popup": "popup.html"
+  },
+  "icons" : {
+    "128": "images/icon.png"
+  },
+  "background": {
+    "scripts": [
+      "lib/bower_components/jquery/dist/jquery.min.js",
+      "js/bootstrap-datepicker.js",
+      "js/background.js"
+    ]
+  }
+
+}
